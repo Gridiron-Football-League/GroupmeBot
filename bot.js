@@ -112,7 +112,7 @@ function respond() {
   }
    else if(request.text && botRegexStr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/tRHOo6p.jpg");
+    postMessage("https://imgur.com/oZkLwbc");
     this.res.end();
   }
   else {
