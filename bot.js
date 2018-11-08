@@ -121,7 +121,7 @@ function respond() {
   }
    else if(request.text && botRegexStream.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Streaming is mandatory for all games");
+    postMessage("Streaming-is-mandatory-for-all-games");
     this.res.end();
   }
    else if(request.text && botRegexWk3.test(request.text)) {
