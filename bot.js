@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexWk1 = /^\/week1/; botRegexWk2 = /^\/week2/;
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegex4th = /^\/bum/; botRegexStream = /^\/stream/;
       botRegexWk3 = /^\/week3/; botRegexWk4 = /^\/week4/; botRegexWk5 = /^\/week5/; botRegexWk6 = /^\/week6/; botRegexWk7 = /^\/week7/;
       botRegexWk8 = /^\/week8/; botRegexWk9 = /^\/week9/; botRegexWk10 = /^\/week10/; botRegexWk11 = /^\/week11/; botRegexWk12 = /^\/week12/; 
       botRegexWk13 = /^\/week13/; botRegexWk14 = /^\/week14/; botRegexWk15 = /^\/week15/; botRegexWk16 = /^\/week16/; botRegexWk17 = /^\/week17/; 
@@ -106,7 +106,7 @@ function respond() {
    }
   else if(request.text && botRegex4th.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/21762469_100730794007422_3429882240250323740_o.jpg?efg=eyJpIjoidCJ9&oh=b8deff5e6b9ba3131c208bfe565994f2&oe=5A591F1F");
+    postMessage("https://imgur.com/a/nxH9l1i");
     this.res.end(); 
   }
   else if(request.text && botRegexBills.test(request.text)) {
@@ -114,14 +114,14 @@ function respond() {
     postMessage("https://s-media-cache-ak0.pinimg.com/originals/86/17/b3/8617b31849eb39c59257e878533c9e1b.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexWk1.test(request.text)) {
+  else if(request.text && botRegexBum.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://imgur.com/a/nxH9l1i");
     this.res.end();
   }
-   else if(request.text && botRegexWk2.test(request.text)) {
+   else if(request.text && botRegexStream.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/iPVmPPS.jpg");
+    postMessage("Streaming: Mandatory for all games.");
     this.res.end();
   }
    else if(request.text && botRegexWk3.test(request.text)) {
