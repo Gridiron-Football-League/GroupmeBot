@@ -88,7 +88,7 @@ function respond() {
   }
   else if(request.text && botRegexFM.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("reddit.com");
+    postMessage("http://daddyleagues.com/mwo");
     this.res.end();
   }
   else if(request.text && botRegexStandings.test(request.text)) {
@@ -98,7 +98,7 @@ function respond() {
   }
    else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("reddit.com");
+    postMessage("http://daddyleagues.com/mwo/rules");
     this.res.end();
    }
   else if(request.text && botRegex4th.test(request.text)) {
@@ -118,7 +118,7 @@ function respond() {
   }
    else if(request.text && botRegexStream.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("reddit.com");
+    postMessage("https://i.imgur.com/tRHOo6p.jpg");
     this.res.end();
   }
   else {
