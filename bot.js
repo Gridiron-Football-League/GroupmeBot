@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegex4th = /^\/bum/; botRegexStream = /^\/stream/;
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexbum = /^\/bum/; botRegexStream = /^\/stream/;
       botRegexWk3 = /^\/week3/; botRegexWk4 = /^\/week4/; botRegexWk5 = /^\/week5/; botRegexWk6 = /^\/week6/; botRegexWk7 = /^\/week7/;
       botRegexWk8 = /^\/week8/; botRegexWk9 = /^\/week9/; botRegexWk10 = /^\/week10/; botRegexWk11 = /^\/week11/; botRegexWk12 = /^\/week12/; 
       botRegexWk13 = /^\/week13/; botRegexWk14 = /^\/week14/; botRegexWk15 = /^\/week15/; botRegexWk16 = /^\/week16/; botRegexWk17 = /^\/week17/; 
