@@ -92,7 +92,7 @@ function respond() {
   }
   else if(request.text && botRegex4th.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://imgur.com/kq3ekfD");
+    postMessage("https://i.imgur.com/kq3ekfD.png");
     this.res.end();
   }
   else {
