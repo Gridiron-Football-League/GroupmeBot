@@ -9,10 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexbum = /^\/bum/; botRegexStream = /^\/stream/;
-      botRegexWk3 = /^\/week3/; botRegexWk4 = /^\/week4/; botRegexWk5 = /^\/week5/; botRegexWk6 = /^\/week6/; botRegexWk7 = /^\/week7/;
-      botRegexWk8 = /^\/week8/; botRegexWk9 = /^\/week9/; botRegexWk10 = /^\/week10/; botRegexWk11 = /^\/week11/; botRegexWk12 = /^\/week12/; 
-      botRegexWk13 = /^\/week13/; botRegexWk14 = /^\/week14/; botRegexWk15 = /^\/week15/; botRegexWk16 = /^\/week16/; botRegexWk17 = /^\/week17/; 
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexbum = /^\/bum/; botRegexStream = /^\/stream/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -91,7 +88,7 @@ function respond() {
   }
   else if(request.text && botRegexFM.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("reddit.com");
     this.res.end();
   }
   else if(request.text && botRegexStandings.test(request.text)) {
@@ -101,7 +98,7 @@ function respond() {
   }
    else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("reddit.com");
     this.res.end();
    }
   else if(request.text && botRegex4th.test(request.text)) {
@@ -122,81 +119,6 @@ function respond() {
    else if(request.text && botRegexStream.test(request.text)) {
     this.res.writeHead(200);
     postMessage("reddit.com");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk3.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/LmRWMv6.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk4.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/teteDCL.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk5.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/DH0Ldur.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk6.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/anLut6E.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk7.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/VNfA6rk.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk8.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/Bn2qF9G.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk9.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/hJSCPLS.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk10.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/2rbqdUT.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk11.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/PSs2jHl.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk12.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/yKmTJHx.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk13.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/4APqnSU.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk14.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/MaISJth.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk15.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/H4aevEF.jpg");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk16.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
-    this.res.end();
-  }
-   else if(request.text && botRegexWk17.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
     this.res.end();
   }
   else {
