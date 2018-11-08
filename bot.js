@@ -91,7 +91,7 @@ function respond() {
   }
   else if(request.text && botRegexFM.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://genericmaddenleague.proboards.com/");
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexStandings.test(request.text)) {
@@ -101,7 +101,7 @@ function respond() {
   }
    else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://genericmaddenleague.proboards.com/board/7/trades-votes");
+    postMessage("");
     this.res.end();
    }
   else if(request.text && botRegex4th.test(request.text)) {
@@ -121,7 +121,7 @@ function respond() {
   }
    else if(request.text && botRegexStream.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Streaming-is-mandatory-for-all-games");
+    postMessage("reddit.com");
     this.res.end();
   }
    else if(request.text && botRegexWk3.test(request.text)) {
