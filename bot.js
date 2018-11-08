@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexbum = /^\/bum/; botRegexStream = /^\/stream/; 
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexbum = /^\/bum/; botRegexStr = /^\/stream/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -116,7 +116,7 @@ function respond() {
     postMessage("https://imgur.com/a/nxH9l1i");
     this.res.end();
   }
-   else if(request.text && botRegexStream.test(request.text)) {
+   else if(request.text && botRegexStr.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/tRHOo6p.jpg");
     this.res.end();
