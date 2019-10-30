@@ -34,7 +34,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://rmsl.freeforums.net/thread/4/rules");
+    postMessage("https://docs.google.com/document/d/183TMN5TtQpD1Qq1eb4tUgdGS2WRwYX8ecgSCSQ-6WDY/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -67,7 +67,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://rmsl.freeforums.net/board/2/contact-list");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
@@ -87,7 +87,7 @@ function respond() {
   }
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://rmsl.freeforums.net/thread/85/rmsl-trading");
+    postMessage("http://daddyleagues.com/rmsl/forum/forum/8998");
     this.res.end();
   }
   else if(request.text && botRegex4th.test(request.text)) {
